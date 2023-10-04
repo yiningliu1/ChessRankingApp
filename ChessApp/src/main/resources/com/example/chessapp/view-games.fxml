@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane" onMouseEntered="#gamesSort" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chessapp.ControllerGamesView">
+   <children>
+      <TableView fx:id="tbl_Games" layoutX="18.0" layoutY="118.0" prefHeight="255.0" prefWidth="565.0">
+         <columns>
+            <TableColumn fx:id="col_Winner" prefWidth="282.0" text="Winner" />
+            <TableColumn fx:id="col_Loser" prefWidth="282.0" text="Loser" />
+         </columns>
+      </TableView>
+      <Label fx:id="lbl_MNGames" layoutX="236.0" layoutY="23.0" text="View Games">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Gback" layoutX="518.0" layoutY="23.0" mnemonicParsing="false" onAction="#navBackGV" prefHeight="25.0" prefWidth="65.0" text="Back" />
+      <Label layoutX="18.0" layoutY="73.0" prefHeight="25.0" prefWidth="65.0" text="Member:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cb_MembersVG" layoutX="83.0" layoutY="73.0" prefHeight="25.0" prefWidth="333.0" />
+   </children>
+</AnchorPane>

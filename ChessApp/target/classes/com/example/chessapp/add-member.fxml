@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chessapp.ControllerAddMember">
+   <children>
+      <Button fx:id="btn_ADback" layoutX="510.0" layoutY="22.0" mnemonicParsing="false" onAction="#navBackAM" prefHeight="25.0" prefWidth="65.0" text="Back" />
+      <Label fx:id="lbl_AddMember" alignment="TOP_CENTER" layoutX="195.0" layoutY="67.0" prefHeight="50.0" prefWidth="210.0" text="Add Member">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_Name" layoutX="81.0" layoutY="163.0" prefHeight="27.0" prefWidth="53.0" text="Name:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbl_GradeLevel" layoutX="36.0" layoutY="269.0" prefHeight="27.0" prefWidth="98.0" text="Grade Level:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_name" layoutX="164.0" layoutY="164.0" prefHeight="25.0" prefWidth="282.0" />
+      <ChoiceBox fx:id="cb_GradeLevel" layoutX="163.0" layoutY="270.0" prefHeight="25.0" prefWidth="65.0" />
+      <Button fx:id="btn_AddMember" layoutX="473.0" layoutY="325.0" mnemonicParsing="false" onAction="#createMember" prefHeight="27.0" prefWidth="74.0" text="Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
